@@ -1,7 +1,18 @@
+.login{
+    display: flex;
+    justify-content: flex-end;
+}
+
 .login__button{
     display: flex;
     height: 45px;
     width: 180px;
     align-items: center;
     justify-content: center;
+    text-decoration: none;
+    color:#fff;
+    font-family: 'Roboto';
+    font-weight: 500;
+    border:1px solid #fff;
+    margin: 20px 100px 0 0;
 }
