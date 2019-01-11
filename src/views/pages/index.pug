@@ -1,33 +1,22 @@
 extends ../auth.layout.pug
 
 block content
-  .hero  
-    .login
-      a(href="" class="login__button") Авторизоваться
+  .hero
+    +login("login__button")
     .user
       .user__container
         img(src="./assets/images/user/avatar.png", alt="" class="user__avatar")
-        .user__name
-          p.user__text Борис Дрябин
-          p.user__description Личный сайт веб разработчика
+        +userInfo
         .user__socials
-          ul.user__socials-list
-            li.user__socials-item
-              +icon('vk','user__icon')
-            li.user__socials-item
-              +icon('github','user__icon')
-            li.user__socials-item
-              +icon('linkedin','user__icon')
-               
+          +socials('user__icon', 'user__socials-list')
         .user__footer
           .footer
             ul.footer__list
               li.footer__item
-                a(href="" class="footer__link") Мои работы
+                a(href="/my-works.html" class="footer__link") Мои работы
               li.footer__item
                 a(href="" class="footer__link") Обо мне
               li.footer__item
                 a(href="" class="footer__link") Блог
-
-
-    .footer
+    .page-footer
+      span.page-footer__title © Борис Дрябин | создано с любовью в LoftSchool | 2018

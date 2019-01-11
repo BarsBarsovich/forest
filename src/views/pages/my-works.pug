@@ -1,0 +1,12 @@
+extends ../main.layout.pug
+
+block variables
+  - var title = 'Мои работы'
+
+block scripts
+  script(src='works.bundle.js')
+
+block content
+  .hero
+    include ../common/header.pug
+    include ../common/avatar.pug

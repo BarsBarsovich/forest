@@ -4,3 +4,22 @@ mixin icon(iconName, iconClass)
 
 mixin image(imagePath, imageAlt, imageClass)
   img(src=`/assets/images/${imagePath}`, alt=`${imageAlt}`, class=`${imageClass}`)
+
+mixin login(className)
+  .login
+    a(href="" class=`${className}`) Авторизоваться
+
+mixin socials(className, socialsName)
+  ul(class=socialsName)
+    li.user__socials-item
+      +icon('vk',className)
+    li.user__socials-item
+      +icon('github',className)
+    li.user__socials-item
+      +icon('linkedin',className)
+
+mixin userInfo
+  .user
+    .user__name
+      p.user__text Борис Дрябин
+      p.user__description Личный сайт веб разработчика
