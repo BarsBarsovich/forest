@@ -6,9 +6,28 @@ block content
       a(href="" class="login__button") Авторизоваться
     .user
       .user__container
-        img(src="", alt="")
+        img(src="./assets/images/user/avatar.png", alt="" class="user__avatar")
         .user__name
+          p.user__text Борис Дрябин
+          p.user__description Личный сайт веб разработчика
         .user__socials
+          ul.user__socials-list
+            li.user__socials-item
+              +icon('vk','user__icon')
+            li.user__socials-item
+              +icon('github','user__icon')
+            li.user__socials-item
+              +icon('linkedin','user__icon')
+               
         .user__footer
+          .footer
+            ul.footer__list
+              li.footer__item
+                a(href="" class="footer__link") Мои работы
+              li.footer__item
+                a(href="" class="footer__link") Обо мне
+              li.footer__item
+                a(href="" class="footer__link") Блог
+
 
     .footer
